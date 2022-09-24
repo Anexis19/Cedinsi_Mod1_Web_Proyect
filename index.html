@@ -4,33 +4,192 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="../images/icon_super.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;600&display=swap" rel="stylesheet">
     <title>Supermercado Balcones</title>
 </head>
 <body>
-    <header>
-        <h1>Supermercado Balcones</h1>
 
-        <nav>
-            <h3><a href="#">INICIO</a></h3>
-            <h3><a href="./pages/categorias.html">  CATEGORIAS          </a></h3>
-            <h3><a href="./pages/ofertas.html">     OFERTAS             </a></h3>
-            <h3><a href="./pages/pedidos.html">     REALIZA TU PEDIDO   </a></h3>
-            <h3><a href="./pages/nosotros.html">    NOSOTROS            </a></h3>
-            <h3><a href="./pages/ayuda.html">       AYUDA               </a></h3>
+    <header>
+        <!-- HEADER CONTAINER -->
+        <div class="header__container">
+            <!-- HEADER LOGO -->
+            <div class="header__logo">
+                <a href="#"><img src="../images/Logo_Supermercado.png" alt="Error al cargar la imagen" width="400px" height="400px"></a>
+            </div>
+
+            <!-- HEADER FRASE  -->
+            <div class="header__frase">
+                <div class="header__frase__title">
+                    <h1>BUSCA, COMPARA Y PIDE</h1>
+                </div>
+                <div class="header__frase__search">
+                    <label for="search__input">¿BUSCAS ALGO EN ESPECIFICO?</label>
+
+                    <input type="text" name="search__input" id="" placeholder="Escribe el producto que deseas buscar" size="30">
+
+                </div>
+
+            </div>
+
+            <!-- HEADER LOGIN  -->
+            <div class="header__login">
+                <a href=""><h4>INICIAR SESIÓN</h4></a>
+                <a href=""><h4>REGISTRARSE</h4></a>
+
+            </div>
+        </div>
+
+        <!-- HEADER NAV -->
+        <nav class="header__nav">
+            <ul>
+                <li><a href="#">INICIO</a></h3></li>
+                <li><a href="./pages/ofertas.html">     OFERTAS             </a></li>
+                <li><a href="./pages/pedidos.html">     REALIZA TU PEDIDO   </a></li>
+                <li><a href="./pages/nosotros.html">    NOSOTROS            </a></li>
+                <li><a href="./pages/ayuda.html">       AYUDA               </a></li>
+            </ul>
         </nav>
+        <div class="header__img__container">
+            <img src="./images/store_bg2.jpg" alt="" class="header__img">
+        </div>
     </header>
 
 
-    <section>
-        <h2>INICIAR SESIÓN</h2>
-        <h2>REGISTRARSE</h2>
-    </section>
-    <section>
+
+
+    <!-- SECTION__PRODUCTS -->
+    <section class="section__products">
         <article>
-            <h1>PRODUCTOS</h1>
+
+            <!-- SECTION TITLE -->
+            <div class="section__products__title">
+                <h1>PRODUCTOS</h1>
+            </div>
+
+            <!-- SECTION ITEMS -->
+            <div class="section__products__items">
+
+                <!-- SECTION GROUP -->
+                <div class="section__products__group">
+                    <!-- SECTION IMG -->
+                    <img src="./images/meat.jpg" alt="Error al cargar la imagen" width="300px" height="400px">
+
+                    <!-- SECTION DESCRIPTION -->
+                    <div class="section__products__descp">
+                        <h3>DESCRIPCION:</h3>  CARNE DE RES 5KG
+                        <h3>PRECIO:</h3> $$$$$$$$
+                    </div>
+
+
+                </div>
+                <!-- SECTION GROUP -->
+                <div class="section__products__group">
+                    <!-- SECTION IMG -->
+                    <img src="./images/milk.jpg" alt="Error al cargar la imagen" width="300px" height="400px">
+
+                    <!-- SECTION DESCRIPTION -->
+                    <div class="section__products__descp">
+                        <h3>DESCRIPCION:</h3>  LECHE ENTERA
+                        <h3>PRECIO:</h3> $$$$$$$$
+                    </div>
+
+                </div>
+                <!-- SECTION GROUP -->
+                <div class="section__products__group">
+                    <!-- SECTION IMG -->
+                    <img src="./images/pasta.jpg" alt="Error al cargar la imagen" width="300px" height="400px">
+                    <!-- SECTION DESCRIPTION -->
+                    <div class="section__products__descp">
+                        <h3>DESCRIPCION:</h3>  PASTAS 100GR
+                        <h3>PRECIO:</h3> $$$$$$$$
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <!-- SECTION ITEMS -->
+            <div class="section__products__items">
+                <!-- SECTION GROUP -->
+                <div class="section__products__group">
+                    <!-- SECTION IMG -->
+                    <img src="./images/meat.jpg" alt="Error al cargar la imagen" width="300px" height="400px">
+
+                    <!-- SECTION DESCRIPTION -->
+                    <div class="section__products__descp">
+                        <h3>DESCRIPCION:</h3>  CARNE DE RES 5KG
+                        <h3>PRECIO:</h3> $$$$$$$$
+                    </div>
+
+
+                </div>
+                <!-- SECTION GROUP -->
+                <div class="section__products__group">
+
+                    <!-- SECTION IMG -->
+                    <img src="./images/milk.jpg" alt="Error al cargar la imagen" width="300px" height="400px">
+
+                    <!-- SECTION DESCRIPTION -->
+                    <div class="section__products__descp">
+                        <h3>DESCRIPCION:</h3>  LECHE ENTERA
+                        <h3>PRECIO:</h3> $$$$$$$$
+                    </div>
+
+                </div>
+                <div class="section__products__group">
+                    <img src="./images/pasta.jpg" alt="Error al cargar la imagen" width="300px" height="400px">
+
+                    <div class="section__products__descp">
+                        <h3>DESCRIPCION:</h3>  PASTAS 100GR
+                        <h3>PRECIO:</h3> $$$$$$$$
+                    </div>
+
+                </div>
+
+
+            </div>
         </article>
     </section>
+
+    <!-- FOOTER -->
     <footer>
+
+        <div class="footer__container">
+            <!-- FOOTER TITLE -->
+            <div class="footer__title">
+                <h3>CONTACTO</h3>
+            </div>
+
+            <!-- FOOTER CONTACT  -->
+            <div class="footer__contact">
+
+
+                <!-- FOOTER GROUPS CONTACT  -->
+                <div class="footer__contact__item">
+                    <div class="footer__group">
+                        <a href="#"><img src="./images/instagram_logo.png" alt="Error al cargar la imagen"></a>
+                    </div>
+                    <div class="footer__group">
+                        <a href="https://www.linkedin.com/in/andres-felipe-hurtado-z%C3%BA%C3%B1iga-92b715180/"><img src="./images/linkedin_logo.png" alt="Error al cargar la imagen"></a>
+                    </div>
+                    <div class="footer__group">
+                        <a href="https://github.com/Anexis19"><img src="./images/github_logo.png" alt="Error al cargar la imagen"></a>
+                    </div>
+                    <div class="footer__group">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ahpayp2@gmail.com&su=ASUNTO&body=CONTENIDO"><img src="./images/gmail_logo.png" alt="Error al cargar la imagen"></a>
+                    </div>
+                </div>
+
+
+            </div>
+            AH Development
+        </div>
+
 
     </footer>
 </body>
