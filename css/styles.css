@@ -19,7 +19,11 @@ body{
 
 .header__nav{
     text-align: center;
-    background-color:#202C33 ;
+    background-color:rgb(32, 44, 51, 0.9) ;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 .header__nav ul{
     padding: 10px;
@@ -27,7 +31,7 @@ body{
 }
 .header__nav a {
     text-decoration: none;
-    color: #fff
+    color: #ffff;
 }
 
 .header__nav li{
@@ -39,7 +43,7 @@ body{
 
 
 .header__nav a:hover, .header__nav li:hover{
-    color: #428327;
+    color: #428327 ;
     font-weight: bold;
     transition: 1s;
 }
@@ -49,6 +53,7 @@ body{
     text-align: center;
 }
 .header__img{
+    filter: brightness(50%);
     height: 600px;
     width: 100%;
 }
