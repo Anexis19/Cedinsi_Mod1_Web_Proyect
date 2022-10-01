@@ -1,3 +1,4 @@
+/* SECTION ESTILOS CONTENEDOR FOOTER */
 .footer__container{
     padding:1em;
     color: #fff;
@@ -5,6 +6,7 @@
     background-color: #202C33;
 
 }
+/* SECTION ESTILOS CONTENEDOR QUE CONTIENE LOS LOGOS */
 .footer__contact__item{
     display: flex;
     justify-content: space-around;
