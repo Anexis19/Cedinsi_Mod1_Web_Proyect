@@ -1,0 +1,11 @@
+.footer__container{
+    padding:1em;
+    color: #fff;
+    text-align: center;
+    background-color: #202C33;
+
+}
+.footer__contact__item{
+    display: flex;
+    justify-content: space-around;
+}
