@@ -1,0 +1,19 @@
+.section__cyber{
+    text-align: center;
+}
+.section__cyber img{
+    /* object-fit: cover; */
+    width: 100%;
+    height: 500px;
+    scale: 1;
+    filter: brightness(50%);
+    transition: 0.5s;
+}
+.section__cyber img:hover{
+    filter: brightness(100%);
+    transition: 0.5s;
+}
+/* ESTILOS A DESCRIPCION DE PRECIO DE OFERTA */
+.section__products__offer{
+    color: #D2543D;
+}

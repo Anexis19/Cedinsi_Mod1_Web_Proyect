@@ -1,5 +1,5 @@
-/* ESTILOS APLICADOS A TODO EL CONTENIDO BODY */
 body{
+    /* NOTE ESTILOS APLICADOS AL BODY DE LA PAGINA */
     font-family: 'League Spartan', sans-serif;
 }
 .header__container{
@@ -14,14 +14,60 @@ body{
 .header__search__input{
     font-family: 'League Spartan', sans-serif;
 }
-.header__login a{
+.header__login__container{
+    display: flex;
+}
+.header__login__container a{
     text-decoration: none;
     color: black;
     font-size: 1.5em;
 }
-.header__login a:hover{
+
+.header__login__container a:hover{
+    /* NOTE INICIO DE ESTILOS DE ANIMACION */
     color: #428327;
 }
+.header__login h4, .header__create__account h4{
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+}
+.header__login h4:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #428327;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.6s ease-out;
+}
+.header__login h4:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.header__create__account h4:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #428327;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.6s ease-out;
+}
+.header__create__account h4:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    /* NOTE FIN DE ESTILOS DE ANIMACION */
+}
+
+/* ESTILOS BARRA NAV */
 .header__nav{
     text-align: center;
     background-color:rgb(32, 44, 51, 0.9) ;

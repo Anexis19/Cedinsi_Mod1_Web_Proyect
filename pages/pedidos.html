@@ -7,6 +7,7 @@
     <link rel="icon" href="../images/icon_super.png">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/delivery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;600&display=swap" rel="stylesheet">
@@ -28,6 +29,61 @@
             <li><a href="ayuda.html">       AYUDA               </a></li>
         </ul>
     </nav>
+
+    <section class="section__form">
+        <div class="form__container">
+            <form action="">
+
+                <div class="form__group">
+                    <label for="input__nombre">Nombres:</label>
+                    <input type="text" name="input__nombre" id="" placeholder="Digite sus nombres" class="clear__checkbox" required>
+                </div>
+                <div class="form__group">
+                    <label for="input__apellido">Apellidos:</label>
+                    <input type="text" name="input__apellido" placeholder="Digite sus apellidos" class="clear__checkbox" required><br>
+                </div>
+                <div class="form__group">
+                    <label for="tipo__id">Tipo de identificacion</label>
+                    <select name="tipo__id" id="" required>
+                        <option selected>Seleccione su tipo de documento</option>
+                        <option value="">CC. Cedula de ciudadania</option>
+                        <option value="">TI. Tarjeta de identidad</option>
+                        <option value="">PAS. Pasaporte</option>
+                        <option value="">CE. Cedula de extranjeria</option>
+                    </select><br>
+                </div>
+                <div class="form__group">
+                    <label for="input__id">Número de identificación:</label>
+                    <input type="number" name="input__id" id="" pattern="[0-9]{8,10}" placeholder="Solo numeros" title="Error en el formato" class="clear__checkbox" required>
+                </div>
+                <div class="form__group">
+                    <label for="input__celular">Celular:</label>
+                    <input type="text" name="input__celular" id="" pattern="[0-9]{10}" placeholder="Número de celular" title="Error en el formato" class="clear__checkbox" required>
+                </div>
+                <div class="form__group">
+                    <label for="input__direccion">Dirección:</label>
+                    <input type="text" name="input__direccion" id="" placeholder="Digite la direccion de envio" class="clear__checkbox" required>
+                </div>
+                <div class="form__group">
+                    <label for="input__productos">Selecciona los productos que deseas llevar</label><br>
+                    <input type="checkbox" name="checkbox__milk"        id="" class="checkbox__input"><label for="checkbox__milk">Leche Entera Alpina</label><br>
+                    <input type="checkbox" name="checkbox__tomate"      id="" class="checkbox__input"><label for="checkbox__tomate">Tomate de Cocina x500GR</label><br>
+                    <input type="checkbox" name="checkbox__eggs"        id="" class="checkbox__input"><label for="checkbox__eggs">Panal de Huevos Kike x30UND</label><br>
+                    <input type="checkbox" name="checkbox__meat"        id="" class="checkbox__input"><label for="checkbox__meat">Carne de Res Colanta x500GR</label><br>
+                    <input type="checkbox" name="checkbox__pasta"       id="" class="checkbox__input"><label for="checkbox__pasta">Pastas Doria x 200GR</label><br>
+                    <input type="checkbox" name="checkbox__salchicha"   id="" class="checkbox__input"><label for="checkbox__salchicha">Salchicha Ranchera x14UND</label><br>
+                </div>
+
+                <div class="form__button">
+                    <button type="submit">Enviar</button>
+                </div>
+
+            </form>
+
+        </div>
+    </section>
+
+
    <!-- SECTION FOOTER -->
    <footer>
         <div class="footer__container">

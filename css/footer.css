@@ -11,3 +11,14 @@
     display: flex;
     justify-content: space-around;
 }
+/* SECTION ESTILOS ANIMACIÓN LOGOS - FIN */
+.footer__group{
+    /* NOTE TRANSICION DE REGRESO SOBRE LOGOS */
+    transition: 1s;
+}
+/* SECTION ESTILOS ANIMACIÓN LOGOS - INICIO */
+.footer__group:hover{
+    /* NOTE TRANSICION DE INICIO SOBRE LOGOS*/
+    transition: 2s;
+    transform: scale(1.3);
+}

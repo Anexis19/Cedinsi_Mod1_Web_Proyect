@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="icon" href="../images/icon_super.png">
+    <link rel="shortcut icon" href="images/icon_super.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;600&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
             <!-- FIXME HEADER LOGO -->
             <div class="header__logo">
                 <!-- tengo un error al cargar la imagen del logo -->
-                <a href="#"><img src="../images/Logo_Supermercado.png" alt="Error al cargar la imagen" width="400px" height="400px"></a>
+                <a href="#"><img src="images/Logo_Supermercado.png" alt="Error al cargar la imagen" width="400px" height="400px"></a>
                 <!-- ///////////////////////////////////////////// -->
             </div>
             <!--  HEADER FRASE  -->
@@ -36,13 +36,15 @@
             </div>
 
             <!--  HEADER LOGIN  -->
-            <div class="header__login">
-                <a href=""><h4>INICIAR SESIÓN</h4></a>
-                <a href=""><h4>REGISTRARSE</h4></a>
+            <div class="header__login__container">
+                <div class="header__login">
+                    <a href=""><h4>INICIAR SESIÓN</h4></a>
+                </div>
+                <div class="header__create__account">
+                    <a href=""><h4>REGISTRARSE</h4></a>
+                </div>
             </div>
         </div>
-
-
     </header>
      <!-- SECTION  HEADER NAV -->
      <nav class="header__nav">
@@ -57,111 +59,112 @@
     <div class="header__img__container">
         <img src="./images/store_bg2.jpg" alt="" class="header__img">
     </div>
+    <!-- SECTION_TITLE -->
+    <div class="section__products__title">
+        <h1>PRODUCTOS</h1>
+    </div>
 
-    <!-- SECTION SECTION__PRODUCTS -->
-    <section class="section__products">
-        <article>
+    <div class="background__container">
+        <!-- SECTION SECTION__PRODUCTS -->
+        <section class="section__products">
+            <article>
+                <!-- SECTION_ITEMS -->
+                <div class="section__products__items">
 
-            <!-- SECTION_TITLE -->
-            <div class="section__products__title">
-                <h1>PRODUCTOS</h1>
-            </div>
+                    <!-- SECTION_GROUP -->
+                    <div class="section__products__group">
+                        <!-- SECTION_IMG -->
+                        <div class="section__products__img">
+                            <img src="./images/meat.png" alt="Error al cargar la imagen" >
+                        </div>
 
-            <!-- SECTION_ITEMS -->
-            <div class="section__products__items">
-
-                <!-- SECTION_GROUP -->
-                <div class="section__products__group">
-                    <!-- SECTION_IMG -->
-                    <div class="section__products__img">
-                        <img src="./images/meat.jpg" alt="Error al cargar la imagen" >
+                        <!-- SECTION_DESCRIPTION -->
+                        <div class="section__products__descp">
+                            <h3>DESCRIPCION:</h3>  CARNE DE RES 5KG
+                            <h3>PRECIO:</h3> $$$$$$$$
+                        </div>
                     </div>
 
-                    <!-- SECTION_DESCRIPTION -->
-                    <div class="section__products__descp">
-                        <h3>DESCRIPCION:</h3>  CARNE DE RES 5KG
-                        <h3>PRECIO:</h3> $$$$$$$$
+                    <!-- SECTION_GROUP -->
+                    <div class="section__products__group">
+                        <!-- SECTION_IMG -->
+                        <div class="section__products__img">
+                            <img src="./images/milk.png" alt="Error al cargar la imagen">
+                        </div>
+
+
+                        <!-- SECTION_DESCRIPTION -->
+                        <div class="section__products__descp">
+                            <h3>DESCRIPCION:</h3>  LECHE ENTERA
+                            <h3>PRECIO:</h3> $$$$$$$$
+                        </div>
+
                     </div>
-                </div>
+                    <!-- SECTION_GROUP -->
+                    <div class="section__products__group">
+                        <!-- SECTION_IMG -->
+                        <div class="section__products__img">
+                            <img src="./images/pasta.png" alt="Error al cargar la imagen" ">
+                        </div>
 
-                <!-- SECTION_GROUP -->
-                <div class="section__products__group">
-                    <!-- SECTION_IMG -->
-                    <div class="section__products__img">
-                        <img src="./images/milk.jpg" alt="Error al cargar la imagen">
-                    </div>
-
-
-                    <!-- SECTION_DESCRIPTION -->
-                    <div class="section__products__descp">
-                        <h3>DESCRIPCION:</h3>  LECHE ENTERA
-                        <h3>PRECIO:</h3> $$$$$$$$
-                    </div>
-
-                </div>
-                <!-- SECTION_GROUP -->
-                <div class="section__products__group">
-                    <!-- SECTION_IMG -->
-                    <div class="section__products__img">
-                        <img src="./images/pasta.jpg" alt="Error al cargar la imagen" ">
-                    </div>
-
-                    <!-- SECTION_DESCRIPTION -->
-                    <div class="section__products__descp">
-                        <h3>DESCRIPCION:</h3>  PASTAS 100GR
-                        <h3>PRECIO:</h3> $$$$$$$$
-                    </div>
-                </div>
-            </div>
-            <!-- SECTION_ITEMS -->
-            <div class="section__products__items">
-                <!-- SECTION_GROUP -->
-                <div class="section__products__group">
-                    <!-- SECTION_IMG -->
-                    <div class="section__products__img">
-                        <img src="./images/tomate.jpg" alt="Error al cargar la imagen" >
-                    </div>
-
-
-                    <!-- SECTION_DESCRIPTION -->
-                    <div class="section__products__descp">
-                        <h3>DESCRIPCION:</h3>  TOMATE DE COCINA
-                        <h3>PRECIO:</h3> $$$$$$$$
+                        <!-- SECTION_DESCRIPTION -->
+                        <div class="section__products__descp">
+                            <h3>DESCRIPCION:</h3>  PASTAS 100GR
+                            <h3>PRECIO:</h3> $$$$$$$$
+                        </div>
                     </div>
                 </div>
+                <!-- SECTION_ITEMS -->
+                <div class="section__products__items">
+                    <!-- SECTION_GROUP -->
+                    <div class="section__products__group">
+                        <!-- SECTION_IMG -->
+                        <div class="section__products__img">
+                            <img src="./images/tomate.png" alt="Error al cargar la imagen" >
+                        </div>
 
-                <!-- SECTION_GROUP -->
-                <div class="section__products__group">
 
-                    <!-- SECTION_IMG -->
-                    <div class="section__products__img">
-                        <img src="./images/eggs.jpg" alt="Error al cargar la imagen" >
+                        <!-- SECTION_DESCRIPTION -->
+                        <div class="section__products__descp">
+                            <h3>DESCRIPCION:</h3>  TOMATE DE COCINA
+                            <h3>PRECIO:</h3> $$$$$$$$
+                        </div>
                     </div>
 
+                    <!-- SECTION_GROUP -->
+                    <div class="section__products__group">
 
-                    <!-- SECTION_DESCRIPTION -->
-                    <div class="section__products__descp">
-                        <h3>DESCRIPCION:</h3>  HUEVO POR UNIDAD
-                        <h3>PRECIO:</h3> $$$$$$$$
+                        <!-- SECTION_IMG -->
+                        <div class="section__products__img">
+                            <img src="./images/eggs.png" alt="Error al cargar la imagen" >
+                        </div>
+
+
+                        <!-- SECTION_DESCRIPTION -->
+                        <div class="section__products__descp">
+                            <h3>DESCRIPCION:</h3>  HUEVO POR UNIDAD
+                            <h3>PRECIO:</h3> $$$$$$$$
+                        </div>
+                    </div>
+                    <div class="section__products__group">
+                        <!-- SECTION_IMG -->
+                        <div class="section__products__img">
+                            <img src="./images/salchicha.png" alt="Error al cargar la imagen">
+                        </div>
+
+
+                        <!-- SECTION_DESCRIPTION -->
+                        <div class="section__products__descp">
+                            <h3>DESCRIPCION:</h3>  SALCHICHA MANGUERA
+                            <h3>PRECIO:</h3> $$$$$$$$
+                        </div>
+
                     </div>
                 </div>
-                <div class="section__products__group">
-                    <!-- SECTION_IMG -->
-                    <div class="section__products__img">
-                        <img src="./images/salchicha.jpg" alt="Error al cargar la imagen">
-                    </div>
+            </article>
+        </section>
 
-
-                    <!-- SECTION_DESCRIPTION -->
-                    <div class="section__products__descp">
-                        <h3>DESCRIPCION:</h3>  SALCHCICHA MANGUERA
-                        <h3>PRECIO:</h3> $$$$$$$$
-                    </div>
-
-                </div>
-            </div>
-        </article>
-    </section>
+    </div>
     <!-- SECTION FOOTER -->
     <footer>
         <div class="footer__container">
