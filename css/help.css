@@ -1,0 +1,47 @@
+.section__help{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.help__title{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: 1.5s;
+}
+.help__title:hover{
+    color: #7ED957;
+    transition: 1.5s;
+}
+.help__map{
+    padding: 0.5em;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    width: 810px;
+    height: 550px;
+    margin: auto;
+}
+.help__tel{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.help__group{
+    margin: auto;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px outset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin-top:20px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.img__cellphone{
+    width: 100px;
+}

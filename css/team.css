@@ -1,0 +1,25 @@
+.section__team{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.team__container{
+    margin: auto;
+    text-align: center;
+}
+.team__title{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: 1.5s;
+}
+.team__title:hover{
+    color: #7ED957;
+    transition: 1.5s;
+}
+.video__container{
+    margin-top: 20px;
+    border-radius: 10px;
+}

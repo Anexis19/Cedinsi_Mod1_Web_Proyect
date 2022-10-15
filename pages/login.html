@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../images/icon_super.png">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/background__img.css">
+    <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="icon" href="../images/icon_super.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;600&display=swap" rel="stylesheet">
-    <title>Categorias</title>
+    <title>Inicio de sesion</title>
 </head>
 <body>
+    <!-- SECTION HEADER -->
     <header>
         <div class="header__container">
-            <a href="#"><img src="../images/Logo_Supermercado.png" alt=""></a></div>
-
+            <a href="../index.html"><img src="../images/Logo_Supermercado.png" alt=""></a>
+        </div>
     </header>
     <nav class="header__nav">
         <ul>
             <li><a href="../index.html">    INICIO              </a></li>
-            <li><a href="#">                CATEGORIAS          </a></li>
             <li><a href="ofertas.html">     OFERTAS             </a></li>
             <li><a href="pedidos.html">     REALIZA TU PEDIDO   </a></li>
             <li><a href="nosotros.html">    NOSOTROS            </a></li>
@@ -29,6 +31,33 @@
         </ul>
     </nav>
 
+    <div class="background__container">
+        <section class="section__login__container">
+            <div class="login__container">
+                <div class="login__title">
+                    INICIAR SESIÓN
+                </div>
+                <div class="login__form">
+                    <form action="">
+                        <div class="login__group">
+                            <label for="input__id">Número de identificacion</label>
+                            <input type="text" name="input__id" class="clear__checkbox" placeholder="Ingrese su numero de identificacion" required>
+                        </div>
+                        <div class="login__group">
+                            <label for="input__passwd">Contraseña</label>
+                            <input type="password" name="input__passwd" id="" class="clear__checkbox" placeholder="Digite su contraseña" required><br>
+                            <a href=""><u>¿Has olvidado tu contraseña?</u></a>
+
+                        </div>
+                        <div class="form__button">
+                            <button type="submit">INGRESAR</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </div>\
     <!-- SECTION FOOTER -->
     <footer>
         <div class="footer__container">

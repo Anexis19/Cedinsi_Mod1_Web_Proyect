@@ -1,0 +1,60 @@
+.section__login__container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.login__title{
+    font-weight: bold;
+    font-size: 30px;
+}
+.login__container{
+    border-radius: 10px;
+    margin: auto;
+    font-size: 20px;
+    background-color:  #7ED957;
+    width: 400px;
+    text-align: center;
+    padding: 50px;
+    border: 2px outset;
+    font-weight: bold;
+}
+.login__group{
+    margin-top: 20px;
+}
+.login__group>input{
+    border-top-style: none;
+    border-left-style: none;
+    text-align: center;
+    margin-top: 10px;
+}
+.login__group>a{
+    text-decoration: none;
+    color: #1E91EF;
+}
+.clear__checkbox{
+    width: 80%;
+    clear: both;
+    margin-bottom: 10px;
+    height: 30px;
+    border-radius: 10px;
+}
+.form__button{
+    width: 50%;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form__button button{
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color:#202C33;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}

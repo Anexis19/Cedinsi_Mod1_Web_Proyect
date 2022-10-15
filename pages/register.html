@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/background__img.css">
+    <link rel="icon" href="../images/icon_super.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;600&display=swap" rel="stylesheet">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <!-- SECTION HEADER -->
+    <header>
+        <div class="header__container">
+            <a href="../index.html"><img src="../images/Logo_Supermercado.png" alt=""></a>
+        </div>
+    </header>
+    <nav class="header__nav">
+        <ul>
+            <li><a href="../index.html">    INICIO              </a></li>
+            <li><a href="ofertas.html">     OFERTAS             </a></li>
+            <li><a href="pedidos.html">     REALIZA TU PEDIDO   </a></li>
+            <li><a href="nosotros.html">    NOSOTROS            </a></li>
+            <li><a href="ayuda.html">       AYUDA               </a></li>
+        </ul>
+    </nav>
+    <!-- SECTION FORM -->
+    <div class="background__container">
+        <section class="section__register">
+            <div class="register__container">
+                <div class="register__title">
+                    FORMULARIO DE REGISTRO
+                </div>
+                <div class="register__group">
+                    <label for="input__nombres">Nombres:</label>
+                    <input type="text" name="input__nombres" id="" class="clear__checkbox" placeholder="Digite sus nombres" required>
+                </div>
+                <div class="register__group">
+                    <label for="input__apellidos">Apellidos:</label>
+                    <input type="text" name="input__apellidos" id="" class="clear__checkbox" placeholder="Digite sus apellidos" required>
+                </div>
+                <div class="register__group">
+                    <label for="tipo__id">Tipo de Identificacion:</label>
+                    <select name="tipo__id" id="" required>
+                        <option selected>Seleccione su tipo de documento</option>
+                        <option value="">CC. Cedula de ciudadania</option>
+                        <option value="">TI. Tarjeta de identidad</option>
+                        <option value="">PAS. Pasaporte</option>
+                        <option value="">CE. Cedula de extranjeria</option>
+                    </select><br>
+                </div>
+                <div class="register__group">
+                    <label for="input__id">Número de identificación:</label>
+                    <input type="text" name="input__id" id="" class="clear__checkbox" placeholder="Digite su numero de identicación" required>
+                </div>
+                <div class="register__group">
+                    <label for="">Sexo:</label><br>
+                    <input type="radio" name="radio__sexo" id="radio__h" value="H">
+                    <label for="radio__h">Hombre</label><br>
+                    <input type="radio" name="radio__sexo" id="radio__m"  value="M">
+                    <label for="radio__m">Mujer</label><br>
+                    <input type="radio" name="radio__sexo" id="radio__o" value="O">
+                    <label for="radio__o">Otro</label><br>
+                </div><br>
+                <div class="register__group">
+                    <label for="input__celular">Número de celular:</label>
+                    <input type="text" name="input__celular" id="" class="clear__checkbox" placeholder="Digite su número de celular" required>
+                </div>
+                <div class="register__group">
+                    <label for="input__direccion">Dirección:</label>
+                    <input type="text" name="input__celular" id="" class="clear__checkbox" placeholder="Digite su dirección" required>
+                </div>
+                <div class="register__group">
+                    <label for="input__passwd">Nueva Contraseña:</label>
+                    <input type="text" name="input__passwd" id="" class="clear__checkbox" placeholder="Digite su contraseña" required>
+                </div>
+                <div class="register__group">
+                    <label for="input__re__passwd">Repita su Contraseña:</label>
+                    <input type="text" name="input__re__passwd" id="" class="clear__checkbox" placeholder="Digite nuevamente su contraseña" required>
+                </div>
+                <div class="form__button">
+                    <button type="submit">REGISTRAR</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- SECTION FOOTER -->
+   <footer>
+    <div class="footer__container">
+        <!-- SECTION_FOOTER TITLE -->
+        <div class="footer__title">
+            <h3>CONTACTO</h3>
+        </div>
+        <!-- SECTION_FOOTER CONTACT  -->
+        <div class="footer__contact">
+            <!-- SECTION_FOOTER GROUPS CONTACT  -->
+            <div class="footer__contact__item">
+                <div class="footer__group">
+                    <a href="#"><img src="../images/instagram_logo.png" alt="Error al cargar la imagen"></a>
+                </div>
+                <div class="footer__group">
+                    <a href="https://www.linkedin.com/in/andres-felipe-hurtado-z%C3%BA%C3%B1iga-92b715180/"><img src="../images/linkedin_logo.png" alt="Error al cargar la imagen"></a>
+                </div>
+                <div class="footer__group">
+                    <a href="https://github.com/Anexis19"><img src="../images/github_logo.png" alt="Error al cargar la imagen"></a>
+                </div>
+                <div class="footer__group">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ahpayp2@gmail.com&su=ASUNTO&body=CONTENIDO"><img src="../images/gmail_logo.png" alt="Error al cargar la imagen"></a>
+                </div>
+            </div>
+        </div>
+        AH Development
+    </div>
+</footer>
+</body>
+</html>

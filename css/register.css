@@ -1,31 +1,32 @@
-.section__form{
+.section__register{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.form__title{
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.6);
-    font-size: 40px;
-    font-weight: bold;
-    padding: 20px;
-    margin-bottom: 20px;
-    transition: 1.5s;
-}
-.form__title:hover{
-    color: #7ED957;
-    transition: 1.5s;
-}
 
-.form__container{
+.register__container{
+    padding: 50px;
+    background-color: #7ED957;
+    width: 400px;
+    margin: auto;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
-    width: 400px;
-    background-color: #7ED957;
-    margin: auto;
-    padding: 50px;
-    border-radius: 10px;
     border: 2px outset;
+    border-radius: 10px;
+
+}
+.register__group{
+    text-align: left;
+}
+.register__group>input{
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+}
+
+.register__title{
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 .clear__checkbox{
     width: 100%;
@@ -34,26 +35,13 @@
     height: 30px;
     border-radius: 10px;
 }
-.checkbox__input{
-    clear: none;
-}
-
-.form__container select{
+.register__container select{
     width: 100%;
     clear: both;
     margin-bottom: 30px;
     height: 30px;
     border-radius: 10px;
 }
-.form__group{
-    text-align: left;
-}
-.form__group>input{
-    border-top-style: none;
-    border-left-style: none;
-    border-right-style: none;
-}
-
 .form__button{
     width: 50%;
     height: 40px;
@@ -63,7 +51,7 @@
     justify-content: center;
 }
 .form__button button{
-    margin-top: 50px;
+    margin-top: 10px;
     border-radius: 10px;
     width: 100%;
     height: 100%;
@@ -75,6 +63,4 @@
     color: white;
     cursor: pointer;
 }
-
-
 

@@ -3,22 +3,25 @@ html{
     scroll-behavior: smooth;
 }
 /* ESTILOS FONDO DE PANTALLA */
-.background__container{
-    background-image: url(../images/background__img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-}
+
 .section__products{
     margin: auto;
     width: 90%;
 }
 
 /* SECTION ESTILOS TITULO "PRODUCTOS" */
-.section__products__title{
+.section__title{
     text-align: center;
-    font-size: 2em;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: 1.5s;
+}
+.section__title:hover{
+    color: #7ED957;
+    transition: 1.5s;
 }
 /* SECTION ESTILOS CONTENEDOR DE CADA IMAGEN */
 .section__products__img{

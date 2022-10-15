@@ -1,0 +1,7 @@
+.background__container{
+    background-image: url(../images/background__img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
