@@ -6,7 +6,7 @@
 .register__container{
     padding: 50px;
     background-color: #7ED957;
-    width: 400px;
+    width: 500px;
     margin: auto;
     text-align: center;
     font-size: 20px;
@@ -62,5 +62,10 @@
     font-weight: bold;
     color: white;
     cursor: pointer;
+}
+
+.carousel {
+    margin: auto;
+    width:  600px;
 }
 

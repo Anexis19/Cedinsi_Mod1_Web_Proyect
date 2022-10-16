@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- INSERCION DE ESTILOS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- INSERCION DE ESTILOS PROPIOS -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
@@ -19,11 +22,8 @@
     <header>
         <!--  HEADER CONTAINER -->
         <div class="header__container">
-            <!-- FIXME HEADER LOGO -->
             <div class="header__logo">
-                <!-- tengo un error al cargar la imagen del logo -->
                 <a href="#"><img src="images/Logo_Supermercado.png" alt="Error al cargar la imagen" width="400px" height="400px"></a>
-                <!-- ///////////////////////////////////////////// -->
             </div>
             <!--  HEADER FRASE  -->
             <div class="header__frase">
@@ -50,28 +50,56 @@
      <!-- SECTION  HEADER NAV -->
      <nav class="header__nav">
         <ul>
-            <li><a href="#">INICIO</a></h3></li>
+            <li><a href="#">INICIO</a></li>
             <li><a href="./pages/ofertas.html">     OFERTAS             </a></li>
             <li><a href="./pages/pedidos.html">     REALIZA TU PEDIDO   </a></li>
             <li><a href="./pages/nosotros.html">    NOSOTROS            </a></li>
             <li><a href="./pages/ayuda.html">       AYUDA               </a></li>
         </ul>
     </nav>
-    <div class="header__img__container">
-        <img src="./images/store_bg2.jpg" alt="" class="header__img">
-    </div>
+
+
     <div class="background__container">
+
+
+        <!-- =============================
+        INSERCION DE CAROUSEL BOOTSTRAP
+        ================================== -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/carousel__img1.jpg" class="d-block w-100" alt="Error al cargar la imagen">
+            </div>
+            <div class="carousel-item">
+                <img src="images/carousel__img2.jpg" class="d-block w-100" alt="Error al cargar la imagen">
+            </div>
+            <div class="carousel-item">
+                <img src="images/carousel__img3.jpg" class="d-block w-100" alt="Error al cargar la imagen">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
         <!-- SECTION_TITLE -->
         <div class="section__title">
             PRODUCTOS
         </div>
-
         <!-- SECTION SECTION__PRODUCTS -->
         <section class="section__products">
             <article>
                 <!-- SECTION_ITEMS -->
                 <div class="section__products__items">
-
                     <!-- SECTION_GROUP -->
                     <div class="section__products__group">
                         <!-- SECTION_IMG -->
@@ -81,25 +109,23 @@
 
                         <!-- SECTION_DESCRIPTION -->
                         <div class="section__products__descp">
-                            <h3>DESCRIPCION:</h3>  CARNE DE RES 5KG
-                            <h3>PRECIO:</h3> $$$$$$$$
+                            <span>DESCRIPCION:</span> <br>
+                            CARNE DE RES 5KG <br>
+                            <span>PRECIO:</span><br>$$$$$$$$
                         </div>
                     </div>
-
                     <!-- SECTION_GROUP -->
                     <div class="section__products__group">
                         <!-- SECTION_IMG -->
                         <div class="section__products__img">
                             <img src="./images/milk.png" alt="Error al cargar la imagen">
                         </div>
-
-
                         <!-- SECTION_DESCRIPTION -->
                         <div class="section__products__descp">
-                            <h3>DESCRIPCION:</h3>  LECHE ENTERA
-                            <h3>PRECIO:</h3> $$$$$$$$
+                            <span>DESCRIPCION:</span> <br>
+                            LECHE ENTERA <br>
+                            <span>PRECIO:</span><br>$$$$$$$$
                         </div>
-
                     </div>
                     <!-- SECTION_GROUP -->
                     <div class="section__products__group">
@@ -110,8 +136,9 @@
 
                         <!-- SECTION_DESCRIPTION -->
                         <div class="section__products__descp">
-                            <h3>DESCRIPCION:</h3>  PASTAS 100GR
-                            <h3>PRECIO:</h3> $$$$$$$$
+                            <span>DESCRIPCION:</span><br>
+                            PASTAS 100GR<br>
+                            <span>PRECIO:</span><br>$$$$$$$$
                         </div>
                     </div>
                 </div>
@@ -127,11 +154,11 @@
 
                         <!-- SECTION_DESCRIPTION -->
                         <div class="section__products__descp">
-                            <h3>DESCRIPCION:</h3>  TOMATE DE COCINA
-                            <h3>PRECIO:</h3> $$$$$$$$
+                            <span>DESCRIPCION:</span><br>
+                            TOMATE DE COCINA<br>
+                            <span>PRECIO:</span><br>$$$$$$$$
                         </div>
                     </div>
-
                     <!-- SECTION_GROUP -->
                     <div class="section__products__group">
 
@@ -139,12 +166,11 @@
                         <div class="section__products__img">
                             <img src="./images/eggs.png" alt="Error al cargar la imagen" >
                         </div>
-
-
                         <!-- SECTION_DESCRIPTION -->
                         <div class="section__products__descp">
-                            <h3>DESCRIPCION:</h3>  HUEVO POR UNIDAD
-                            <h3>PRECIO:</h3> $$$$$$$$
+                            <span>DESCRIPCION:</span><br>
+                            HUEVO POR UNIDAD<br>
+                            <span>PRECIO:</span><br>$$$$$$$$
                         </div>
                     </div>
                     <div class="section__products__group">
@@ -152,19 +178,16 @@
                         <div class="section__products__img">
                             <img src="./images/salchicha.png" alt="Error al cargar la imagen">
                         </div>
-
-
                         <!-- SECTION_DESCRIPTION -->
                         <div class="section__products__descp">
-                            <h3>DESCRIPCION:</h3>  SALCHICHA MANGUERA
-                            <h3>PRECIO:</h3> $$$$$$$$
+                            <span>DESCRIPCION:</span><br>
+                            SALCHICHA MANGUERA<br>
+                            <span>PRECIO:</span><br>$$$$$$$$
                         </div>
-
                     </div>
                 </div>
             </article>
         </section>
-
     </div>
     <!-- SECTION FOOTER -->
     <footer>
@@ -194,6 +217,8 @@
             AH Development
         </div>
     </footer>
+<!-- INSERCION DE BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
 
