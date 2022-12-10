@@ -56,6 +56,7 @@
                     <div class="register__group">
                         <label for="tipo__id">Tipo de Identificacion:</label>
                         <select name="tipo__id" id="inputSelect" >
+                            <option value=" " name="option__select" >Seleccione su documento</option>
                             <option value="CC" name="option__select">CC. Cedula de ciudadania</option>
                             <option value="TI" name="option__select">TI. Tarjeta de identidad</option>
                             <option value="PAS" name="option__select">PAS. Pasaporte</option>
@@ -82,7 +83,7 @@
                     </div><br>
                     <div class="register__group">
                         <label for="input__celular">Número de celular:</label>
-                        <input type="text" name="input__celular" id="inputCel" class="clear__checkbox" placeholder="Digite su número de celular" >
+                        <input type="text" name="input__celular" id="inputCel" class="clear__checkbox" placeholder="Digite su número de celular" pattern="[0-9]{10}" >
                     </div>
                     <div class="register__group">
                         <label for="input__direccion">Dirección:</label>

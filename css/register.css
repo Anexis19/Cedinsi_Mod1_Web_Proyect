@@ -5,15 +5,18 @@
 
 .register__container{
     padding: 50px;
-    background-color: #7ED957;
+    color: white;
+    background-color: rgba(32, 44,51,0.4);
     width: 500px;
     margin: auto;
     text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    border: 2px outset;
+    font-size: 25px;
+    border: 2px outset white;
     border-radius: 10px;
 
+}
+input, select{
+    accent-color: green;
 }
 .register__group{
     text-align: left;
