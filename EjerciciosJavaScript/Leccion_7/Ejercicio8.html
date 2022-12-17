@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+
+</head>
+<body>
+    <h1>LECTURA DE SUELDO</h1>
+
+    <!-- EJERCICIO
+    Leer n cantidad de sueldos de empleados y determinar el sueldo mas bajo,
+    imprimir los sueldos y el sueldo mas bako
+    -->
+
+    <script>
+        let sueldos = []
+        let sueldoBajo = 0;
+
+        leerSueldos();
+        function imprimirDatos(frase){
+            alert(frase)
+        }
+        function leerSueldos(){
+
+            let cantidadSueldos = parseInt(prompt("Digite la cantidad de sueldos a ingresar: "));
+
+            for(var contador = 1; contador <= cantidadSueldos; contador++){
+
+                let sueldo = parseInt(prompt("Digite el sueldo: "))
+                sueldos.push(sueldo);
+
+            }
+            sueldoBajo = Math.min.apply(null,sueldos);
+            imprimirDatos("El saldo más bajo es: "+sueldoBajo);
+            imprimirDatos("El conjunto de sueldos es: "+sueldos)
+            document.write("El conjunto de sueldo es: " +sueldos)
+        }
+    </script>
+
+
+</body>
+</html>

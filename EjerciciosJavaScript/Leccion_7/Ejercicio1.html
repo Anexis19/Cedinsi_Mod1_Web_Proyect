@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <h1>GENERADOR DE NUMEROS </h1>
+    <!-- EJERCICIO
+    Realizar un programa que permita generar 100 numeros e imprimir solo los numeros pares
+    -->
+    <script>
+
+
+
+
+        generador();
+
+        function aleatorio(){
+            return Math.round(Math.random() * 100);
+        }
+
+        function imprimirDatos(frase){
+            document.write(frase+"<br>");
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function generador(){
+            let numerosTotales = [];
+            let numerosPares = [];
+            let contador = 0;
+            while (contador < 100){
+
+
+                let numeroAleatorio = aleatorio();
+                let encontrado = false;
+
+                for (var posicion = 0; posicion < numerosTotales.length; posicion++){
+
+                    if(numeroAleatorio == numerosTotales[posicion]){
+
+                        encontrado = true;
+                        break;
+                    }
+                }
+                if (encontrado == false){
+                    numerosTotales.push(numeroAleatorio);
+                    contador++;
+
+                    if(numeroAleatorio % 2 == 0){
+                        numerosPares.push(numeroAleatorio);
+                    }
+
+                }
+
+            }
+            console.log(numerosTotales);
+            console.log(numerosPares);
+            imprimirDatos("El array generado es: " +numerosTotales);
+            imprimirDatos("El array con numeros PARES es: " +numerosPares);
+
+        }
+
+    </script>
+</body>
+</html>

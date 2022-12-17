@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+</head>
+<body>
+    <h1>LLENADO DE ARRAY</h1>
+
+    <!-- EJERCICIO
+    Llenar un arreglo de tamaño n y estos elementos sean 1 y 0 alternando e imprimir por consola
+    -->
+
+    <script>
+
+        let arreglo = [];
+
+        llenadoArreglo();
+        function imprimirDatos(frase){
+            document.write(frase+"<br>");
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function llenadoArreglo(){
+
+            let cantidad = parseInt(prompt("Digite el tamaño del arreglo"));
+
+            for(var contador = 0; contador < cantidad; contador ++){
+
+                if (contador % 2 == 0 ){
+                    arreglo.push(1);
+                }
+                else{
+                    arreglo.push(0);
+                }
+
+            }
+
+            imprimirDatos("El arreglo es de tamaño: " +cantidad );
+            imprimirDatos("El arreglo es: "+arreglo);
+            console.log(arreglo.length)
+            console.log(arreglo)
+        }
+    </script>
+</body>
+</html>

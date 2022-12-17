@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <h1>CALCULO DE SALARIO</h1>
+
+    <!-- EJERCICIO
+    Realizar un algoritmo que calcule el salario de un empleado segun los siguientes
+    parametros
+
+    a. Si gana menos de 699.999. Descuento de pension 2% y más un Aux de Transporte = 6%
+    b. Si gana entre 700.000 y 999.999, Descuento de pension = 4%, Subsidio familiar = 12.000
+    c. Si gana más de un millon, Descuento de pension = 6%
+    -->
+
+    <script>
+
+        let salario = parseInt(prompt("Ingrese su salario: "));
+        let descuentos = 0;
+        let subsidios = 0;
+        let saldo = 0;
+
+        imprimirDatos("El salario parcial del empleado es: "+salario)
+        calcularSaldo(salario);
+        function imprimirDatos(frase){
+            document.write(frase+"<br>");
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+        }
+        function calcularSaldo(salario){
+
+            if(salario <= 699999){
+                descuentos = (salario * 0.02);
+                subsidios = (salario *0.06);
+                saldo = salario - descuentos + subsidios;
+            }
+            else if(salario >= 700000 && salario <= 999999){
+                descuentos = (salario * 0.04);
+                subsidios = 12000;
+                saldo = salario - descuentos + subsidios;
+                console.log(descuentos)
+                console.log(subsidios)
+                console.log(saldo)
+            }
+            else{
+                descuentos = (salario * 0.06);
+                saldo = salario - descuentos;
+            }
+
+            imprimirDatos("El salario final del empleado es: $" +saldo);
+        }
+
+    </script>
+</body>
+</html>

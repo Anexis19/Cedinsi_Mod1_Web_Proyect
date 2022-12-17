@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11</title>
+</head>
+<body>
+    <h1>LLENADO DE ARREGLO 2</h1>
+
+    <!-- EJERCICIO
+    Llenar un arreglo de tamaño n, este tamaño debe ser impar y el contenido del
+    arreglo deben ser los numeros pares partiendo de 2
+
+    -->
+
+    <script>
+        let arreglo = [];
+        let cantidad = 0;
+
+        llenarArreglo();
+        function imprimirDatos(frase){
+            document.write(frase+"<br>");
+            document.write("<br>")
+            document.write("<br>")
+            document.write("<br>")
+        }
+        function llenarArreglo(){
+
+            let inicio = 2;
+            cantidad = parseInt(prompt("Digite el tamaño del array"));
+
+            while(cantidad % 2 == 0 || cantidad < 1 ){
+
+                cantidad = parseInt(prompt("El tamaño del arreglo debe ser impar:"))
+            }
+
+
+            for(var contador = 0; contador < cantidad; contador ++){
+
+                arreglo.push(inicio);
+                inicio = inicio +2;
+
+            }
+            imprimirDatos("El arreglo es de tamaño: "+cantidad);
+            imprimirDatos("El arreglo es: "+arreglo);
+        }
+
+    </script>
+</body>
+</html>

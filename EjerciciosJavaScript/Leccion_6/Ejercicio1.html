@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+
+    <h1>CONVERSION DE LITROS</h1>
+
+    <!-- EJERCICIO -->
+    <!-- Realiza el algortimo que convierta litros en centilitros,
+        decilitros, galones y onzas -->
+    <script>
+
+        let numeroLitros = parseInt(prompt("Digite la cantidad de Litros que desea convertir"));
+        let centilitros     = 0;
+        let decilitros      = 0;
+        let galones         = 0;
+        let onzas           = 0;
+
+        document.write("Los litros ingresados fueron: " +numeroLitros +"<br>")
+        document.write("===============================" +"<br>")
+        document.write("===============================" +"<br>")
+        convertirLitros(numeroLitros)
+
+
+        function convertirLitros(litros){
+            centilitros     = litros * 100;
+            decilitros      = litros * 10;
+            galones         = litros * 0.264;
+            onzas           = litros * 33.814;
+
+            imprimirDatos(centilitros, decilitros, galones,onzas);
+        }
+        function imprimirDatos( centilitros, decilitros, galones,onzas){
+
+            document.write("El equivalente en centilitros es: " +centilitros +"<br>");
+            document.write("El equivalente en decilitros es: " +decilitros +"<br>");
+            document.write("El equivalente en galones es: " +galones +"<br>");
+            document.write("El equivalente en onzas es: " +onzas +"<br>");
+
+
+        }
+
+
+    </script>
+</body>
+</html>

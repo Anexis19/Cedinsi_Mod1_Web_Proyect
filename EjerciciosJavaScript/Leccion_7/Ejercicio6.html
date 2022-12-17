@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+</head>
+<body>
+    <h1>IMPRESION DE NOTAS</h1>
+    <!-- EJERCICIO
+    Leer n cantidad de notas de un estudiante e imprimir por pantalla
+    -->
+    <script>
+
+        let notas = []
+
+        function imprimirDatos(frase){
+
+            alert(frase);
+
+        }
+        notasEstudiantes()
+        function notasEstudiantes(){
+
+
+            let dato = parseInt(prompt("Ingrese el numero de notas"));
+
+            for(var contador = 1; contador <= dato; contador++ ){
+
+                let nota = parseInt( prompt("Digite la nota " +contador));
+                notas.push(nota);
+
+            }
+            imprimirDatos("Las notas de estudiante son: "+notas)
+        }
+
+    </script>
+</body>
+</html>

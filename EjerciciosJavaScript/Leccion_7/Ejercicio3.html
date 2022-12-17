@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+
+    <h1>CALCULO DE VENTA DE PRODUCTOS</h1>
+    <!-- EJERCICIO
+    Leer 10 precios de productos y calcular cuanto cuestan los 10 productos
+    -->
+    <script>
+        let valorTotal = 0;
+
+        calcularCompra();
+        function imprimirDatos(frase){
+            alert(frase);
+        }
+
+        function calcularCompra(){
+
+            for (var contador = 1 ; contador <= 10; contador ++){
+
+                let producto = parseInt(prompt("Ingrese el valor del " +contador +" producto" ))
+                valorTotal = valorTotal + producto;
+            }
+            imprimirDatos("El valor total de la compra sera: " +valorTotal);
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+
+    <h1>OPERACIONES BASICAS ENTRE 2 NUMEROS</h1>
+    <!-- EJERCICIO
+
+        Realiza el algoritmo que realice las 4 operaciones basicas
+        con dos numeros de entrada
+    -->
+    <script>
+
+        let numero1 = parseInt(prompt("Digite el primer numero: "));
+        let numero2 = parseInt(prompt("Digite el segundo numero: "));
+
+        let suma = 0;
+        let resta = 0;
+        let division = 0;
+        let multiplicacion = 0;
+
+        document.write("Los numeros ingresados son: " +numero1 + " y " +numero2 +"<br>");
+        document.write("===============================" +"<br>")
+        document.write("===============================" +"<br>")
+        operaciones(numero1,numero2);
+
+        function operaciones(numero1, numero2){
+
+            suma = numero1 + numero2;
+            resta = numero1 - numero2;
+            division = numero1 / numero2;
+
+            if( numero2 == 0 ){
+                alert("Error, No está definida la division por cero")
+                division = "NO es posible realizar";
+            }
+            else{
+                multiplicacion = numero1 * numero2;
+            }
+
+            multiplicacion = numero1 * numero2;
+
+            imprimirDatos(suma,resta,division,multiplicacion);
+
+        }
+
+        function imprimirDatos(suma,resta,division,multiplicacion){
+            document.write("La suma de los dos numeros es: " +suma +"<br>");
+            document.write("La resta de los dos numeros es: " +resta +"<br>");
+            document.write("La division de los dos numeros es: " +division +"<br>");
+            document.write("La multiplicacion de los dos numeros es: " +multiplicacion +"<br>");
+
+        }
+    </script>
+
+</body>
+</html>

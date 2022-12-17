@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <h1>CALCULO DE VALOR A PAGAR</h1>
+    <!--
+        EJERCICIO
+        Realizar el algoritmo que calcule el valor a pagar por algunos galones de gasolina
+        si sabemos que cada centilitro cuesta 25 pesos. Imprimir el valor a pagar y la
+        cantidad de gasolina despachada en litros
+     -->
+    <script>
+        let numeroGalones = parseInt(prompt("Escriba la cantidad de galones de gasolina: "))
+        let litros = 0;
+        let centilitros = 0;
+        let valorTotal = 0;
+        function imprimirDatos(frase){
+            document.write(frase+"<br>")
+            document.write("<br>")
+            document.write("<br>")
+        }
+
+        function calularPrecio(numeroGalones){
+            valorTotal =  Math.round((numeroGalones * 3.78 * 100) * 25);
+            imprimirDatos("El valor total a pagar es: "+"$"+valorTotal);
+        }
+        function calcularLitros(numeroGalones){
+            litros = numeroGalones * 3.78;
+            imprimirDatos("El numero de Litros es: " +litros+"Lts");
+        }
+
+
+
+        document.write("El numero de galones digitado fue: " +numeroGalones +"<br>");
+
+        calularPrecio(numeroGalones);
+        calcularLitros(numeroGalones);
+
+
+    </script>
+</body>
+</html>

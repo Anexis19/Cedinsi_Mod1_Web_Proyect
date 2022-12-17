@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12</title>
+</head>
+<body>
+    <h1>FIBONACCI</h1>
+
+    <!-- EJERCICIO
+    Llenar un arreglo con los primeros 100 numeros de la sucesion de Fibnacci
+    -->
+
+    <script>
+
+        let serie = [];
+
+
+        fibonacci();
+        function imprimirDatos(frase){
+
+            document.write(frase+"<br>");
+
+        }
+
+        function fibonacci(){
+
+            let resultado = 0;
+            let numero1 = 0;
+            let numero2 = 1
+
+            serie[0] = numero1;
+            serie[1] = numero2;
+            for(var contador = 1; contador <= 98 ; contador ++){
+
+                resultado = numero1 + numero2;
+                serie.push(resultado);
+                numero1 = numero2;
+                numero2 = resultado
+
+            }
+            imprimirDatos(serie);
+            imprimirDatos("El tamaño de la serie de Fobinacci es: " +serie.length)
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+</head>
+<body>
+    <h1>CANTIDAD NUMEROS PARES E IMPARA</h1>
+    <!-- EJERCICIO
+        Leer n cantidad de numeros y determinar cantidad
+        la cantidad de imprares, imprimir la cantidad de impares
+     -->
+    <script>
+
+        let contadorImparidad = 0;
+        let numeros = []
+        cantidadNumeros();
+        function imprimirDatos(frase){
+            alert(frase);
+        }
+
+        function cantidadNumeros(){
+
+            let cantidadNumeros= parseInt(prompt("Digite la cantidad de numeros: "))
+
+            for (var contador = 1; contador <= cantidadNumeros; contador++){
+
+                let numero = parseInt(prompt("Digite el numero: "));
+                numeros.push(numero);
+
+                if( numero % 2 != 0 ){
+                    contadorImparidad = contadorImparidad + 1;
+                }
+            }
+            imprimirDatos("La cantidad de numeros impares en los numeros digitados es: " +contadorImparidad)
+            document.write("Los numeros escritos fueron: "+numeros)
+        }
+    </script>
+
+</body>
+</html>

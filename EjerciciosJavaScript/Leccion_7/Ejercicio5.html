@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <h1>LECTURA DE NUMEROS</h1>
+    <!-- EJERCICIOS
+    Leer los primeros 50 numeros y contar cuantos multiplos de 3 hay, imprimir la cantidad
+    -->
+    <script>
+
+        let contadorMultiplos = 0;
+        function imprimirDatos(frase){
+             alert(frase);
+        }
+
+        function calcularMultiplos(){
+
+
+            for (var contador = 0; contador <= 50; contador ++){
+
+                if (contador % 3 == 0){
+                    contadorMultiplos = contadorMultiplos + 1;
+                }
+            }
+            imprimirDatos("Los cantidad de multiplos de 3 entre 0 y 50 son: " +contadorMultiplos);
+        }
+
+        calcularMultiplos();
+
+    </script>
+</body>
+</html>

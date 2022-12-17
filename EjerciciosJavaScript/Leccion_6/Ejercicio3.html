@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <h1>CONVERSION DE GRADOS</h1>
+
+    <input type="text" placeholder="Grados C° a F°" id="input_ce">
+    <button id="boton1">Convertir Grados Centigrados a Fahrenheit</button><br>
+    <input type="text" placeholder="Grados F° a C°" id="input_f">
+    <button id="boton2">Convertir Grados Fahrenheit a Centigrados</button><br>
+
+    <script>
+
+        // EL BOTON 1 ES PARA PASAR DE GRADOS CENTRIGRADOS A FAHRENHEIT
+        // EL BOTON 2 ES PARA PASAR DE GRADOS FAHRENHEIT A CENTIGRADOS
+
+        let boton1 = document.getElementById("boton1");
+        let boton2 = document.getElementById("boton2");
+        let input_ce = document.getElementById("input_ce");
+        let input_f = document.getElementById("input_f");
+
+        let fahrenheit = 0;
+        let centigrados = 0;
+
+
+
+
+        function convertirC_F(){
+
+            fahrenheit = (parseInt(input_ce.value) * 1.8) + 32;
+            alert("La equivalencia es de: " +fahrenheit);
+            input_ce.value = "";
+        }
+        function convertirF_C(){
+           centigrados = (parseInt(input_f.value)-32) / 1.8;
+           alert("La equivalencia es de: " +centigrados);
+            input_f.value = "";
+        }
+
+        boton1.onclick = convertirC_F;
+        boton2.onclick = convertirF_C;
+
+    </script>
+</body>
+</html>

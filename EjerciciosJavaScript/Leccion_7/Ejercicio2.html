@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <h1>SUMA DE LOS 150 NUMEROS</h1>
+
+    <!-- EJERCICIO
+    Realiza un programa que permita sumar los 150 primeros numeros
+    -->
+    <script>
+        let sumaTotal = 0;
+
+        sumarNumeros();
+        function imprimirDatos(frase){
+            alert("La suma de los 150 primero numeros es: " +sumaTotal);
+        }
+
+        function sumarNumeros(){
+
+            for (var contador = 0; contador <= 150; contador++){
+                sumaTotal = sumaTotal + contador;
+            }
+            imprimirDatos(sumaTotal);
+        }
+    </script>
+</body>
+</html>

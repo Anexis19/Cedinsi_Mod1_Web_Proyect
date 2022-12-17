@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <h1>CALCULO DE NOTAS</h1>
+    <!-- EJERCICIO
+    Leeer 12 notas de estudiantes y determinar cuantas aprobo y cuantas reprobo,
+    dado un rando de 0 a 10, reprueba cuando la nota esta entre 0 y 5
+    -->
+    <script>
+
+        function imprimirDatos(frase){
+            alert(frase);
+        }
+
+        let contadorAprobacion = 0;
+        let contadorReprobado = 0;
+
+        calcularNotas();
+        function calcularNotas(){
+
+            for( var contador = 1; contador <= 12; contador ++){
+
+                let notas = parseInt(prompt("Digite la " +contador +" nota"));
+
+
+
+                if(notas > 5 && notas <= 10){
+                    contadorAprobacion = contadorAprobacion + 1;
+                }
+                else if ( notas <=5 && notas >= 0){
+                    contadorReprobado = contadorReprobado + 1;
+                }
+                else{
+                    alert("Nota digitada incorrectamente");
+                    notas = parseInt(prompt("Digite nuevamente la " +contador +" nota"));
+
+                    if(notas > 5 && notas <= 10){
+                        contadorAprobacion = contadorAprobacion + 1;
+                    }
+                    else if ( notas <=5 && notas >= 0){
+                        contadorReprobado = contadorReprobado + 1;
+                    }
+                }
+            }
+            imprimirDatos("Las notas reprobadas fueron: " +contadorReprobado);
+            imprimirDatos("Las notas aprobadas fueron: " +contadorAprobacion);
+        }
+    </script>
+
+</body>
+</html>

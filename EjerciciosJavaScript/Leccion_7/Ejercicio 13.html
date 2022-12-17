@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 13</title>
+</head>
+<body>
+    <h1>LLENADO DE ARREGLO 3</h1>
+
+    <!-- EJERCICIO
+    Llenar un arreglo on los primeros 100 numeros pares y muestre la suma de los elementos
+    del arreglo
+    -->
+
+    <script>
+
+        let arreglo = [];
+        let total = 0;
+        llenarArreglo();
+        function imprimirDatos(frase){
+            document.write(frase+"<br>")
+            document.write("<br>")
+            document.write("<br>")
+            document.write("<br>")
+        }
+
+        function llenarArreglo(){
+
+            let contador = 2
+            while(arreglo.length <= 99){
+
+                if(contador % 2 == 0){
+                    arreglo.push(contador);
+                    total = total + contador;
+                }
+                contador++;
+            }
+            imprimirDatos("El arreglo es: "+arreglo);
+            imprimirDatos("El Tamaño del arreglo es: "+arreglo.length);
+            imprimirDatos("La suma de todos los elementos es: "+total)
+
+        }
+    </script>
+</body>
+</html>

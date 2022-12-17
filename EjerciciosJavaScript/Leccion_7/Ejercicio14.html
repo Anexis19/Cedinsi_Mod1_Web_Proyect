@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14</title>
+</head>
+<body>
+    <h1>LLENADO DE ARREGLO 4</h1>
+    <!-- EJERCICIO
+    Llenar un arreglo de tamaño n que se llene con numeros ingresados por el usuario y
+    determine cantidad de positivos y negativos
+    -->
+
+    <script>
+        let arreglo = [];
+        let cantidadPositivos = 0;
+        let cantidadNegativos = 0;
+
+        llenarArreglo();
+        function imprimirDatos(frase){
+            document.write(frase+"<br>");
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function llenarArreglo(){
+
+            let cantidad = parseInt(prompt("Digite el tamaño del arreglo: "));
+
+            for(var contador = 0; contador < cantidad; contador ++){
+
+                let numero = parseInt(prompt("Digite un numero"));
+                arreglo.push(numero)
+                if(numero >= 0){
+                    cantidadPositivos  = cantidadPositivos + 1;
+                }else{
+                    cantidadNegativos = cantidadNegativos + 1;
+                }
+            }
+            imprimirDatos("El arreglo es: "+arreglo)
+            imprimirDatos("El tamaño del arreglo es: "+cantidad);
+            imprimirDatos("La cantidad de numeros positivos es: "+cantidadPositivos);
+            imprimirDatos("La cantidad de numeros negativos es: "+cantidadNegativos);
+        }
+    </script>
+</body>
+</html>
